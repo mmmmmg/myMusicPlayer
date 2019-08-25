@@ -1,0 +1,71 @@
+.card .head {
+  width: 180rpx;
+  height: 37rpx;
+  margin: 18rpx 0;
+  padding-left: 24rpx;
+  font-size: 30rpx;
+  line-height: 37rpx;
+  position: relative;
+}
+
+.card .head .colordiv {
+  display: block;
+  width: 5rpx;
+  height: 37rpx;
+  background-color: #88FFFD;
+  position: absolute;
+  left: 0;
+}
+
+.card .list .item {
+  width: 100%;
+  height: 78rpx;
+  padding: 10rpx 0;
+  position: relative;
+  border-bottom: 1rpx solid #F9F9F9;
+}
+
+.card .list .item .songname {
+  white-space: nowrap;
+	width: 654rpx; 
+	overflow: hidden;
+  font-size: 32rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 20rpx;
+}
+
+.card .list .item .alias {
+  display: inline;
+  font-size: 32rpx;
+  color: #978897;
+}
+
+.card .list .item .artists {
+  white-space: nowrap;
+	width: 654rpx; 
+	overflow: hidden;
+  font-size: 23rpx;
+  position: absolute;
+  bottom: 10rpx;
+  left: 20rpx;
+  color: #978897;
+}
+
+.card .list .item .artists text {
+  display: inline-block;
+}
+
+.card .list .item .artists .sq {
+  width: 22rpx;
+  height: 16rpx;
+  margin-right: 8rpx;
+}
+
+.card .list .item .musicplay {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 26rpx;
+  right: 20rpx;
+}

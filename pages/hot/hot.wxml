@@ -1,0 +1,17 @@
+<view>
+  <nav-tab></nav-tab>
+
+  <view class='tabs'>
+    <view class='tab tab1' bindtap='navToHome'>推荐音乐</view>
+    <view class='tab tab2 this'>歌手榜</view>
+    <view class='tab' bindtap='navToSearch'>搜索</view>
+  </view>
+
+  <view class='title-box'>
+    <text class='hot-tit'>歌手榜</text>
+    <text class='srl'>singer ranking list</text>
+  </view>
+
+  <singerlist-card list-items="{{singerranklist.data}}"></singerlist-card>
+
+</view>

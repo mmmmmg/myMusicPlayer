@@ -1,0 +1,13 @@
+<view>
+  <nav-tab></nav-tab>
+
+  <view class='tabs'>
+    <view class='tab tab1 this'>推荐音乐</view>
+    <view class='tab tab2' bindtap='navToHot'>歌手榜</view>
+    <view class='tab' bindtap='navToSearch'>搜索</view>
+  </view>
+
+  <category-card list-items="{{rcmsonglist.data}}">推荐歌单</category-card>
+
+  <musiclist-card list-items="{{newsonglist.data}}">最新音乐</musiclist-card>
+</view>

@@ -1,0 +1,34 @@
+<view class='page {{onScroll}}'>
+  <view class='disc-box'>
+    <image class='needle' mode='scaleToFill' src='../../images/needle.png'></image>
+
+    <view class='disc' bindtap='audioPlay'>
+      <view class='music {{rotate}}'>
+        <image class='disc-img' mode='scaleToFill' src='../../images/disc.png'></image>
+        <image class='song-img' mode='scaleToFill' src='{{song.data.songs[0].al.picUrl}}'></image>
+      </view>
+
+      <image wx:if='{{playlogo == true}}' class='onplay' mode='scaleToFill' src='../../images/play_music.png'></image>
+    </view>
+  </view>
+
+  <view class='songname'>
+    {{song.data.songs[0].name}}-
+    <text class='songar'>{{song.data.songs[0].ar[0].name}}</text>
+  </view>
+
+  <view class='lrc-box' bindtap='openLrc'>
+    <text class='lrct'>查看完整歌词></text>
+    <view class='more-lrc'>
+      <image class='lrc-img' mode='scaleToFill' src='../../images/lrc_more.png'></image>
+    </view>
+  </view>
+
+  <view class='lrcbox' wx:if='{{onLrc == true}}'>
+
+    <view class='lrc'>
+      <view wx:for='{{lrcContent}}' wx:key='index'>{{item}}</view>
+    </view>
+
+  </view>
+</view>

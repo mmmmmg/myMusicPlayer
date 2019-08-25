@@ -1,0 +1,32 @@
+<view class="card">
+
+  <view class='head'>
+    <view class='colordiv'></view>
+    <slot></slot>
+  </view>
+
+  <view class='list'>
+    <view class='item' wx:for="{{listItems}}" wx:key="index" data-id='{{item.song.id}}' data-searchid='{{item.id}}' bindtap='tapLogin'>
+    
+      <view class='songname'>
+        {{item.name}}
+        <text class='alias'>{{item.song.alias}}{{item.alia}}</text>
+      </view>
+
+      <view class='artists'>
+        <image class='sq' wx:if="{{item.song.privilege.maxbr == 999000}} {{item.privilege.maxbr == 999000}}" src='../../images/SQ.png' width="22rpx" height="16rpx"></image>
+        <text wx:for="{{item.song.artists}}" wx:for-item='artists' wx:key="index">
+          {{artists.name}}/
+        </text>
+        <text wx:for="{{item.ar}}" wx:for-item='artists' wx:key="index">
+          {{artists.name}}/
+        </text>
+        -{{item.song.album.name}}{{item.al.name}}
+      </view>
+
+      <image class='musicplay' mode='scaleToFill' src='../../images/musicplay.png' width="40rpx" height="40rpx"></image>
+
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav-tab": "/component/nav-tab/nav-tab",
+    "singerlist-card": "/component/singerlist-card/singerlist-card"
+  },
+  "navigationBarTitleText": "歌手榜",
+  "enablePullDownRefresh": true
+}

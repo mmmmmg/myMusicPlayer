@@ -1,0 +1,13 @@
+<view class='card'>
+
+  <view class='list'>
+    <view class='item' wx:for="{{listItems}}" wx:key="index" data-id='{{item.id}}' data-singername='{{item.name}}' bindtap='tapLogin'>
+    
+      <text class='num'>{{index+1}}</text>
+      <image class='singerimg' src='{{item.picUrl}}' width="120rpx" height="120rpx"></image>
+      <text class='name'>{{item.name}}</text>
+
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,36 @@
+<view class='head'>
+  <view class='cover'>
+    <image class="cover-img" mode='scaleToFill' src='{{songsheet.data.coverImgUrl}}'>
+      <view class='playcount'>{{songsheet.data.playCount}}</view>
+      <view class='redtab'>歌单</view>
+    </image>
+
+    <view class='right-box'>
+      <text class='songsheet-name'>{{songsheet.data.name}}</text>
+
+      <view class='creator'>
+        <view class='creator-box'>
+          <image class='creator-img' mode='scaleToFill' src='{{songsheet.data.creator.avatarUrl}}'></image>
+          <image class='creator-logo' mode='scaleToFill' src='../../images/user-logo.png'></image>
+        </view>
+        
+        <text class='creator-name'>{{songsheet.data.creator.nickname}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='tags'>
+  标签：
+  <text>{{songsheet.data.tags[0]}}</text>
+  <text>{{songsheet.data.tags[1]}}</text>
+  <text>{{songsheet.data.tags[2]}}</text>
+</view>
+
+<view class='description {{dec}}' bindtap='changeOverflow'>
+  简介：
+  <text>{{songsheet.data.description}}</text>
+  <image class='arrow' mode='scaleToFill' src='{{arrow}}'></image>
+</view>
+
+<musiclist-card class="musiclist" list-items="{{newsonglist.data}}">音乐列表</musiclist-card>

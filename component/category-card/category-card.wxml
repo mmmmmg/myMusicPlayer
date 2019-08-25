@@ -1,0 +1,24 @@
+<view class='card'>
+
+  <view class='head'>
+    <view class='colordiv'></view>
+    <slot></slot>
+  </view>
+
+  <view class='list'>
+    <view class='item' wx:for="{{listItems}}" wx:key="index" data-id='{{item.id}}' bindtap='tapLogin'>
+
+      <view class='img'>
+        <image class="bkgdimg" mode='scaleToFill' src='{{item.coverImgUrl}}' width='100rpx' height='100rpx'></image>
+        <view class='playcount'>
+          <text class='count'>{{item.playCount}}</text>
+        </view>
+      </view>
+
+      <view class='tit'>
+        <text class='title'>{{item.name}}</text>
+      </view>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-tab": "/component/nav-tab/nav-tab",
+    "musiclist-card": "/component/musiclist-card/musiclist-card"
+  },
+  "navigationBarTitleText": "搜索"
+}

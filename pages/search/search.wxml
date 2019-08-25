@@ -1,0 +1,25 @@
+<view>
+  <nav-tab></nav-tab>
+
+  <view class='tabs'>
+    <view class='tab tab1' bindtap='navToHome'>推荐音乐</view>
+    <view class='tab tab2' bindtap='navToHot'>歌手榜</view>
+    <view class='tab this'>搜索</view>
+  </view>
+
+  <view class="search">
+    <icon class='search-icon' type="search" size="13" />
+    <input class='search-ipt' placeholder="搜索歌曲、歌手、专辑" value='{{contentKeyword}}' auto-focus name='search' bindinput='onSearchInput' bindblur='closeSearch'/>
+  </view>
+
+  <view class='search-suggest' wx:if="{{searchBooks.length == 0}}">
+    <view class='searchkey' wx:if="{{onsearch == 'true'}}">搜索“{{serchkeyword}}”</view>
+    <view wx:if="{{onsearch == 'true'}}" wx:for="{{searchSuggest}}" wx:key="{{index}}" data-keyword='{{item}}' bindtap='startSearch'>
+      <icon class='search-suggest-icon' type="search" size="14" />
+      {{item.name}}
+    </view>
+  </view>
+
+  <musiclist-card class='list' list-items="{{searchsonglist.data.songs}}">搜索结果</musiclist-card>
+
+</view>

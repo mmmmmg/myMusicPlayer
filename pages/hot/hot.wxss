@@ -1,0 +1,46 @@
+.tabs{
+  width: 100%;
+  height: 70rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.tabs view{
+  float: left;
+  height: 66rpx;
+  line-height: 66rpx;
+  display: inline-block;
+  font-size: 30rpx;
+}
+.tab1{
+  margin-left: 90rpx;
+}
+.tab2{
+  margin: 0 140rpx; 
+}
+.this{
+  color: #88FFFD;
+  border-bottom: 6rpx solid #88FFFD;
+}
+
+.title-box {
+  width: 100%;
+  height: 292rpx;
+  background-color: #88FFFD;
+  position: relative;
+}
+
+.title-box .hot-tit {
+  position: absolute;
+  top: 46rpx;
+  left: 50rpx;
+  font-size: 100rpx;
+  letter-spacing: 20rpx;
+  color: #fff;
+}
+
+.title-box .srl{
+  position: absolute;
+  bottom: 80rpx;
+  left: 50rpx;
+  font-size: 30rpx;
+  color: #fff;
+}

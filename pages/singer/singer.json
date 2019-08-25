@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "musiclist-card": "/component/musiclist-card/musiclist-card"
+  },
+  "navigationBarTitleText": "歌手歌曲"
+}

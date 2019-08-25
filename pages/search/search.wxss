@@ -1,0 +1,81 @@
+.tabs{
+  width: 100%;
+  height: 70rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.tabs view{
+  float: left;
+  height: 66rpx;
+  line-height: 66rpx;
+  display: inline-block;
+  font-size: 30rpx;
+}
+.tab1{
+  margin-left: 90rpx;
+}
+.tab2{
+  margin: 0 140rpx; 
+}
+.this{
+  color: #88FFFD;
+  border-bottom: 6rpx solid #88FFFD;
+}
+
+.search {
+  width: 100%;
+  height: 110rpx;
+  border-bottom: 1rpx solid #F5F6F7;
+  position: relative;
+}
+
+.search .search-icon {
+  position: absolute;
+  top: 42rpx;
+  left: 34rpx;
+  z-index: 1;
+}
+
+.search .search-ipt {
+  width: 655rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  padding-left: 60rpx;
+  background-color: #EBECEC;
+  color: #000;
+  position: absolute;
+  top: 28rpx;
+  left: 18rpx;
+}
+
+/* ------------------------------------------------- */
+
+.search-suggest {
+  width: 600rpx;
+  margin: 0 auto;
+  box-shadow: 1rpx 15rpx 25rpx #888;
+  background-color: #fff;
+  position: fixed;
+  top: 250rpx;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+.search-suggest view {
+  white-space: nowrap;
+	width: 100%; 
+	overflow: hidden;
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.search-suggest .searchkey {
+  color: #5581B1;
+}
+
+.search-suggest .search-suggest-icon {
+  margin-right: 20rpx;
+}

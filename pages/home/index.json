@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "nav-tab": "/component/nav-tab/nav-tab",
+    "category-card": "/component/category-card/category-card",
+    "musiclist-card": "/component/musiclist-card/musiclist-card"
+  },
+  "navigationBarTitleText": "推荐音乐",
+  "enablePullDownRefresh": true
+}
